@@ -3,203 +3,239 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo de Fragancias</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<title>Perfumes Gael</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: #f5f2ec;
-    color: #333;
+
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background: linear-gradient(to bottom,#f5f2ec,#eae3d9);
+color:#333;
 }
 
-header {
-    text-align: center;
-    padding: 60px 20px;
+header{
+text-align:center;
+padding:40px 20px;
 }
 
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 50px;
+header h1{
+font-family:'Playfair Display',serif;
+font-size:40px;
 }
 
-.catalogo {
-    width: 90%;
-    margin: auto;
+.catalogo{
+width:90%;
+margin:auto;
 }
 
-.producto {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin: 70px 0;
+.producto{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+margin:50px 0;
+gap:30px;
 }
 
-.producto:nth-child(even) {
-    flex-direction: row-reverse;
+.producto img{
+width:100%;
+max-width:300px;
+border-radius:10px;
 }
 
-.producto img {
-    width: 45%;
-    border-radius: 10px;
+.info{
+flex:1;
 }
 
-.info {
-    width: 50%;
+.info h2{
+font-family:'Playfair Display';
+font-size:30px;
+margin-bottom:10px;
 }
 
-.info h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
+.precio{
+font-size:22px;
+font-weight:bold;
+margin:10px 0;
 }
 
-.precio-box {
-    margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #c8a96a;
+.anuncio{
+background:#fff;
+padding:15px;
+border-left:4px solid #c8a96a;
+margin-top:15px;
+font-size:14px;
 }
 
-.boton {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 10px 20px;
-    background: #c8a96a;
-    color: white;
-    text-decoration: none;
+.boton{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#c8a96a;
+color:#fff;
+text-decoration:none;
+border-radius:5px;
 }
 
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 20px;
+@media(max-width:768px){
+.producto{
+flex-direction:column;
+text-align:center;
 }
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>COLECCIÓN PARÍS</h1>
-    <p>Fragancias elegantes para cada estilo</p>
+<h1>Perfumes Gael</h1>
+<p>Fragancias elegantes para cada estilo</p>
 </header>
 
 <section class="catalogo">
 
+<!-- CLARA -->
 <div class="producto">
-    <img src="clara.jpeg">
-    <div class="info">
-        <h2>CLARA</h2>
-        <p>Fragancia femenina elegante y fresca.</p>
-        <div class="precio-box">
-            Precio: $ <input type="text">
-            <p>💼 Desde 3 unidades: precio especial al por mayor</p>
-        </div>
-        <a class="boton" href="https://wa.me/593987167629" target="_blank">Comprar por WhatsApp</a>
-    </div>
+<img src="clara.jpeg">
+<div class="info">
+<h2>CLARA</h2>
+<p>Frescura delicada y femenina, perfecta para el día a día.</p>
+<div class="precio">$25</div>
+<div class="anuncio">
+💼 Venta al por mayor disponible <br>
+💳 Separa con el 50% por transferencia <br>
+🚚 Pago contra entrega <br>
+✨ Tenemos perfume de prueba disponible
+</div>
+<a class="boton" href="https://wa.me/593987167629?text=Hola quiero comprar CLARA">Comprar</a>
+</div>
 </div>
 
+<!-- BEVERLY -->
 <div class="producto">
-    <img src="scorpion.jpeg">
-    <div class="info">
-        <h2>SCORPION</h2>
-        <p>Fragancia intensa y masculina.</p>
-        <div class="precio-box">
-            Precio: $ <input type="text">
-            <p>💼 Desde 3 unidades: precio especial al por mayor</p>
-        </div>
-        <a class="boton" href="https://wa.me/593987167629" target="_blank">Comprar por WhatsApp</a>
-    </div>
+<img src="beverly.jpeg">
+<div class="info">
+<h2>BEVERLY</h2>
+<p>Elegancia fresca con un toque sofisticado irresistible.</p>
+<div class="precio">$24</div>
+<div class="anuncio">
+💼 Venta al por mayor disponible <br>
+💳 Separa con el 50% por transferencia <br>
+🚚 Pago contra entrega <br>
+✨ Tenemos perfume de prueba disponible
+</div>
+<a class="boton" href="https://wa.me/593987167629?text=Hola quiero comprar BEVERLY">Comprar</a>
+</div>
 </div>
 
+<!-- UGO MUJER -->
 <div class="producto">
-    <img src="ugo-mujer.jpeg">
-    <div class="info">
-        <h2>UGO VANELLI</h2>
-        <p>Perfume elegante y sofisticado.</p>
-        <div class="precio-box">
-            Precio: $ <input type="text">
-            <p>💼 Desde 3 unidades: precio especial al por mayor</p>
-        </div>
-        <a class="boton" href="https://wa.me/593987167629" target="_blank">Comprar por WhatsApp</a>
-    </div>
+<img src="ugo-mujer.jpeg">
+<div class="info">
+<h2>UGO VANELLI</h2>
+<p>Fragancia suave y elegante que resalta tu estilo.</p>
+<div class="precio">$15</div>
+<div class="anuncio">
+💼 Venta al por mayor disponible <br>
+💳 Separa con el 50% por transferencia <br>
+🚚 Pago contra entrega <br>
+✨ Tenemos perfume de prueba disponible
+</div>
+<a class="boton" href="https://wa.me/593987167629?text=Hola quiero comprar UGO VANELLI">Comprar</a>
+</div>
 </div>
 
+<!-- SCORPION -->
 <div class="producto">
-    <img src="beverly.jpeg">
-    <div class="info">
-        <h2>BEVERLY</h2>
-        <p>Fragancia fresca y femenina.</p>
-        <div class="precio-box">
-            Precio: $ <input type="text">
-            <p>💼 Desde 3 unidades: precio especial al por mayor</p>
-        </div>
-        <a class="boton" href="https://wa.me/593987167629" target="_blank">Comprar por WhatsApp</a>
-    </div>
+<img src="scorpion.jpeg">
+<div class="info">
+<h2>SCORPION</h2>
+<p>Intenso, masculino y con carácter fuerte.</p>
+<div class="precio">$20</div>
+<div class="anuncio">
+💼 Venta al por mayor disponible <br>
+💳 Separa con el 50% por transferencia <br>
+🚚 Pago contra entrega <br>
+✨ Tenemos perfume de prueba disponible
+</div>
+<a class="boton" href="https://wa.me/593987167629?text=Hola quiero comprar SCORPION">Comprar</a>
+</div>
 </div>
 
+<!-- YTARES -->
 <div class="producto">
-    <img src="ytares.jpeg">
-    <div class="info">
-        <h2>YTARES</h2>
-        <p>Elegancia intensa y duradera.</p>
-        <div class="precio-box">
-            Precio: $ <input type="text">
-            <p>💼 Desde 3 unidades: precio especial al por mayor</p>
-        </div>
-        <a class="boton" href="https://wa.me/593987167629" target="_blank">Comprar por WhatsApp</a>
-    </div>
+<img src="ytares.jpeg">
+<div class="info">
+<h2>YTARES</h2>
+<p>Elegancia intensa con larga duración.</p>
+<div class="precio">$18</div>
+<div class="anuncio">
+💼 Venta al por mayor disponible <br>
+💳 Separa con el 50% por transferencia <br>
+🚚 Pago contra entrega <br>
+✨ Tenemos perfume de prueba disponible
+</div>
+<a class="boton" href="https://wa.me/593987167629?text=Hola quiero comprar YTARES">Comprar</a>
+</div>
 </div>
 
+<!-- UGO HOMBRE -->
 <div class="producto">
-    <img src="ugo-hombre.jpeg">
-    <div class="info">
-        <h2>UGO POUR HOMME</h2>
-        <p>Fragancia masculina elegante.</p>
-        <div class="precio-box">
-            Precio: $ <input type="text">
-            <p>💼 Desde 3 unidades: precio especial al por mayor</p>
-        </div>
-        <a class="boton" href="https://wa.me/593987167629" target="_blank">Comprar por WhatsApp</a>
-    </div>
+<img src="ugo-hombre.jpeg">
+<div class="info">
+<h2>UGO POUR HOMME</h2>
+<p>Clásico masculino con elegancia atemporal.</p>
+<div class="precio">$28</div>
+<div class="anuncio">
+💼 Venta al por mayor disponible <br>
+💳 Separa con el 50% por transferencia <br>
+🚚 Pago contra entrega <br>
+✨ Tenemos perfume de prueba disponible
+</div>
+<a class="boton" href="https://wa.me/593987167629?text=Hola quiero comprar UGO POUR HOMME">Comprar</a>
+</div>
 </div>
 
+<!-- TIZIANO -->
 <div class="producto">
-    <img src="tiziano.jpeg">
-    <div class="info">
-        <h2>TIZIANO</h2>
-        <p>Perfume clásico y distinguido.</p>
-        <div class="precio-box">
-            Precio: $ <input type="text">
-            <p>💼 Desde 3 unidades: precio especial al por mayor</p>
-        </div>
-        <a class="boton" href="https://wa.me/593987167629" target="_blank">Comprar por WhatsApp</a>
-    </div>
+<img src="tiziano.jpeg">
+<div class="info">
+<h2>TIZIANO</h2>
+<p>Fragancia sofisticada con presencia fuerte.</p>
+<div class="precio">$30</div>
+<div class="anuncio">
+💼 Venta al por mayor disponible <br>
+💳 Separa con el 50% por transferencia <br>
+🚚 Pago contra entrega <br>
+✨ Tenemos perfume de prueba disponible
+</div>
+<a class="boton" href="https://wa.me/593987167629?text=Hola quiero comprar TIZIANO">Comprar</a>
+</div>
 </div>
 
+<!-- KANTARA -->
 <div class="producto">
-    <img src="kantara.jpeg">
-    <div class="info">
-        <h2>KANTARA</h2>
-        <p>Fragancia fresca y refinada.</p>
-        <div class="precio-box">
-            Precio: $ <input type="text">
-            <p>💼 Desde 3 unidades: precio especial al por mayor</p>
-        </div>
-        <a class="boton" href="https://wa.me/593987167629" target="_blank">Comprar por WhatsApp</a>
-    </div>
+<img src="kantara.jpeg">
+<div class="info">
+<h2>KANTARA</h2>
+<p>Fragancia exclusiva, intensa y elegante.</p>
+<div class="precio">$35</div>
+<div class="anuncio">
+💼 Venta al por mayor disponible <br>
+💳 Separa con el 50% por transferencia <br>
+🚚 Pago contra entrega <br>
+✨ Tenemos perfume de prueba disponible
+</div>
+<a class="boton" href="https://wa.me/593987167629?text=Hola quiero comprar KANTARA">Comprar</a>
+</div>
 </div>
 
 </section>
-
-<a class="whatsapp" href="https://wa.me/593987167629" target="_blank">💬</a>
 
 </body>
 </html>
